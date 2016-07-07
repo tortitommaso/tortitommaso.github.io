@@ -16,6 +16,7 @@
 
 <canvas id="canvas"></canvas>
 <script src="./random_word.js"></script>
+<script src="./random_symbol.js"></script>
 <script src="./google_analytics.js"></script>
 <script>
 
@@ -52,10 +53,10 @@
           var x = canvas.width / 2;
           var y = canvas.height / 2;
 
-          context.font = '40pt Times New Roman';
+          context.font = '100pt Times New Roman';
           context.textAlign = 'center';
-          context.fillStyle = 'Black';
-          context.fillText(words(), x, y);
+          context.fillStyle = pickRandomColor();
+          context.fillText(random_symbol(), x, y);
         }
 
         function pickRandomColor() {
